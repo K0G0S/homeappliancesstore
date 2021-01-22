@@ -11,19 +11,19 @@ public class AirCondition {
     private int Zesti;
     private boolean Wifi;
     private boolean FiltroAera;
-
-    private static int timesCreated;
+    private static int Posotita;
+    
     public AirCondition()
     {
         periodicMantainance();
-        timesCreated++;
+        Posotita++;
     }
 
-    public AirCondition(int Ipsos,int Platos,int Ba8os,String Kataskeuastis,String OnomaModelou,String Typos,int Katanalwsi, boolean Wifi,boolean FiltroAera,String coldRank,boolean isInverter)
+    public AirCondition(int Ipsos ,int Platos , int Ba8os , String Kataskeuastis , String OnomaModelou , String Typos , int Katanalwsi , boolean Wifi , boolean FiltroAera , int Posotita )
     {
-        timesCreated++;
+        Posotita++;
 
-        setIpsos(Ipsos);
+        setIpsos(Ipsos);                                                /** me tin entoli set arxikopoioume tis entoles */
         setPlatos(Platos);
         setBa8os(Ba8os);
         setKataskeuastis(Kataskeuastis);
@@ -34,6 +34,7 @@ public class AirCondition {
         setZesti(Zesti);
         setWifi(Wifi);
         setAirFilter(FiltroAera);
+        setPosotita(Posotita);
     }
 
     public void showAll()
@@ -51,13 +52,13 @@ public class AirCondition {
         System.out.printf("Hot Power: %d\n",this.Zesti);
         System.out.printf("Has Wifi: %b\n",this.Wifi);
         System.out.printf("Has Air Filtering: %b\n",this.FiltroAera);
-        System.out.printf("Times Created: %d\n",timesCreated);
+        System.out.printf("Times Created: %d\n",Posotita);
 
     }
 
-    public static int getTimesCreated()
+    public static int getPosotita()                                                           /** me tin entoli return epistrefoume ta apotelesmata */
     {
-        return timesCreated;
+        return Posotita;
     }
 
     private void periodicMantainance()
@@ -163,5 +164,8 @@ public class AirCondition {
     public void setAirFilter(boolean FiltroAera) {
         this.FiltroAera = FiltroAera;
     }
-    
+
+    public int setPosotita(int Posotita) {
+        return Posotita;
+    }
 }

@@ -23,7 +23,7 @@ public class Fridge {
     {
         timesCreated++;
 
-        setIpsos(Ipsos);
+        setIpsos(Ipsos);                                            /** me tin entoli set arxikopoioume tis entoles */
         setPlatos(Platos);
         setBafos(Bafos);
         setKataskeuastis(Kataskeuastis);
@@ -69,7 +69,7 @@ public class Fridge {
 
     }
 
-    public int getIpsos() {
+    public int getIpsos() {                                                 /** me tin entoli return epistrefoume ta apotelesmata */
         return this.Ipsos;
     }
     public void setIpsos(int Ipsos) {

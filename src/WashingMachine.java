@@ -12,8 +12,8 @@ public class WashingMachine {
     private int StrofesAnaDeutero;
     private String[] Fermokrasies;
     private int KatanalwsiNerou;
-
     private static int timesCreated;
+
     public WashingMachine()
     {
         timesCreated++;
@@ -24,7 +24,7 @@ public class WashingMachine {
     {
         timesCreated++;
 
-        setIpsos(Ipsos);
+        setIpsos(Ipsos);                                                      /** me tin entoli set arxikopoioume tis entoles */
         setPlatos(Platos);
         setBa8os(Ba8os);
         setKataskeuastis(Kataskeuastis);
@@ -74,7 +74,7 @@ public class WashingMachine {
 
     }
     
-    public int getIpsos()
+    public int getIpsos()                         /** me tin entoli return epistrefoume ta apotelesmata */
     {
         return this.Ipsos;
     }

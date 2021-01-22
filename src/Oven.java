@@ -22,7 +22,7 @@ public class Oven {
     {
         timesCreated++;
 
-        setIpsos(Ipsos);
+        setIpsos(Ipsos);                                                                                  /** me tin entoli set arxikopoioume tis entoles */
         setMarkos(Markos);
         setBafos(Bafos);
         setKataskeuastis(Kataskeuastis);
@@ -65,7 +65,7 @@ public class Oven {
         System.out.printf("Items Created: %d\n",timesCreated);
     }
     
-    public int getIpsos()
+    public int getIpsos()                                    /** me tin entoli return epistrefoume ta apotelesmata */
     {
         return this.Ipsos;
     }
