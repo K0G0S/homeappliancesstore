@@ -30,13 +30,12 @@ public class homeappliancesstore {
                 Scanner myObj3 = new Scanner(System.in);
                 System.out.println("Posa atoma vouleuoun stin etairia: ");
                 int Stuffcomp = Integer.parseInt(myObj3.nextLine());
-                if (Stuffcomp > 0 ) {
+                if (Stuffcomp > 0) {
                     System.out.println("To prosopiko tis etairias einai:");
                     System.out.println(Idcomp);
                 }
             }
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println(Namecomp);
             System.out.println(Idcomp);
             System.out.println(Stuffcomp);
