@@ -1,63 +1,49 @@
 public class WashingMachine {
 
-    private int height;
-    private int width;
-    private int depth;
-    private String manufacturer;
-    private String name;
-    private String type;
-    private int powerSupply;
+    private int Ipsos;
+    private int Platos;
+    private int Ba8os;
+    private String Kataskeuastis;
+    private String OnomaModelou;
+    private String Typos;
+    private int Katanalwsi;
     private boolean hasPause;
-    private int capacity;
-    private int turnsPerSecond;
-    private String[] temperatures;
-    private int waterSupply;
-    private boolean hasLockForChildren;
+    private int Xwritikotita;
+    private int StrofesAnaDeutero;
+    private String[] Fermokrasies;
+    private int KatanalwsiNerou;
 
     private static int timesCreated;
-
-    /**
-     * default constructor
-     */
     public WashingMachine()
     {
         timesCreated++;
         periodicMantainance();
     }
-    /**
-     * recommended constructor
-     */
-    public WashingMachine(int height,int width,int depth,String manufacturer,String name,String type,int powerSupply,
-                          boolean hasPause, int capacity,int turnsPerSecond,String[] temperatures,int waterSupply,boolean hasLockForChildren)
+
+    public WashingMachine(int Ipsos,int Platos,int Ba8os,String Kataskeuastis,String OnomaModelou,String Typos,int Katanalwsi, boolean hasPause, int Xwritikotita,int StrofesAnaDeutero,String[] Fermokrasies,int KatanalwsiNerou)
     {
         timesCreated++;
 
-        setHeight(height);
-        setWidth(width);
-        setDepth(depth);
-        setManufacturer(manufacturer);
-        setName(name);
-        setType(type);
-        setPowerSupply(powerSupply);
-
+        setIpsos(Ipsos);
+        setPlatos(Platos);
+        setBa8os(Ba8os);
+        setKataskeuastis(Kataskeuastis);
+        setOnomaModelou(OnomaModelou);
+        setTypos(Typos);
+        setKatanalwsi(Katanalwsi);
         setPause(hasPause);
-        setCapacity(capacity);
-        setTurnsPerSecond(turnsPerSecond);
-        setTemperatures(temperatures);
-        setWaterSupply(waterSupply);
-        setLockForChildren(hasLockForChildren);
+        setXwritikotita(Xwritikotita);
+        setStrofesAnaDeutero(StrofesAnaDeutero);
+        setFermokrasies(Fermokrasies);
+        setKatanalwsiNerou(KatanalwsiNerou);
 
     }
-    /**
-     * get how many times it was created
-     */
+   
     public static int getTimesCreated()
     {
         return timesCreated;
     }
-    /**
-     * overloading feature
-     */
+    
     private void periodicMantainance()
     {
 
@@ -66,176 +52,124 @@ public class WashingMachine {
     {
 
     }
-    /**
-     * shows all fields of the washing machine class
-     */
+    
     public void showAll()
     {
         System.out.println("--Washing Machine--");
 
-        System.out.printf("Height: %d\n",this.height);
-        System.out.printf("Width: %d\n",this.width);
-        System.out.printf("Depth: %d\n",this.depth);
-        System.out.printf("Manufacturer: %s\n",this.manufacturer);
-        System.out.printf("Name: %s\n",this.name);
-        System.out.printf("Type: %s\n",this.type);
-        System.out.printf("Power Supply: %d\n",this.powerSupply);
-
+        System.out.printf("Ipsos: %d\n",this.Ipsos);
+        System.out.printf("Platos: %d\n",this.Platos);
+        System.out.printf("Ba8os: %d\n",this.Ba8os);
+        System.out.printf("Kataskeuastis: %s\n",this.Kataskeuastis);
+        System.out.printf("OnomaModelou: %s\n",this.OnomaModelou);
+        System.out.printf("Typos: %s\n",this.Typos);
+        System.out.printf("Power Supply: %d\n",this.Katanalwsi);
         System.out.printf("Has Pause: %b\n",this.hasPause);
-        System.out.printf("Capacity: %d\n",this.capacity);
-        System.out.printf("Turns Per Second: %d\n",this.turnsPerSecond);
-        System.out.printf("Temperatures: %s\n",this.temperatures);
-        System.out.printf("Watter Supply: %s\n",this.waterSupply);
-        System.out.printf("Has Lock For Children: %s\n",this.hasLockForChildren);
+        System.out.printf("Xwritikotita: %d\n",this.Xwritikotita);
+        System.out.printf("Turns Per Second: %d\n",this.StrofesAnaDeutero);
+        System.out.printf("Fermokrasies: %s\n",this.Fermokrasies);
+        System.out.printf("Watter Supply: %s\n",this.KatanalwsiNerou);
         System.out.printf("Times Created: %d\n",timesCreated);
 
 
     }
-
-    /**
-     * gets and sets height
-     */
-    public int getHeight()
+    
+    public int getIpsos()
     {
-        return this.height;
+        return this.Ipsos;
     }
-    public void setHeight(int height)
+    public void setIpsos(int Ipsos)
     {
-        this.height = height;
+        this.Ipsos = Ipsos;
     }
-
-    /**
-     * gets and sets width
-     */
-    public int getWidth()
+    
+    public int getPlatos()
     {
-        return this.width;
+        return this.Platos;
     }
-    public void setWidth(int width)
+    public void setPlatos(int Platos)
     {
-        this.width = width;
+        this.Platos = Platos;
     }
-
-    /**
-     * gets and sets depth
-     */
-    public int getDepth()
+    
+    public int getBa8os()
     {
-        return this.depth;
+        return this.Ba8os;
     }
-    public void setDepth(int depth)
+    public void setBa8os(int Ba8os)
     {
-        this.depth = depth;
+        this.Ba8os = Ba8os;
     }
-
-    /**
-     * gets and sets manufacturer
-     */
-    public String getManufacturer()
+    
+    public String getKataskeuastis()
     {
-        return this.manufacturer;
+        return this.Kataskeuastis;
     }
-    public void setManufacturer(String manufacturer)
+    public void setKataskeuastis(String Kataskeuastis)
     {
-        this.manufacturer=manufacturer;
+        this.Kataskeuastis=Kataskeuastis;
     }
-
-    /**
-     * gets and sets name
-     */
-    public String getName()
+    
+    public String getOnomaModelou()
     {
-        return this.name;
+        return this.OnomaModelou;
     }
-    public void setName(String name)
+    public void setOnomaModelou(String OnomaModelou)
     {
-        this.name=name;
+        this.OnomaModelou=OnomaModelou;
     }
-
-    /**
-     * gets and sets type
-     */
-    public String getType()
+    
+    public String getTypos()
     {
-        return this.type;
+        return this.Typos;
     }
-    public void setType(String type)
+    public void setTypos(String Typos)
     {
-        this.type=type;
+        this.Typos=Typos;
     }
-
-    /**
-     * gets and sets power supply
-     */
-    public int getPowerSupply()
+    
+    public int getKatanalwsi()
     {
-        return this.powerSupply;
+        return this.Katanalwsi;
     }
-    public void setPowerSupply(int powerSupply)
+    public void setKatanalwsi(int Katanalwsi)
     {
-        this.powerSupply = powerSupply;
+        this.Katanalwsi = Katanalwsi;
     }
-
-
-
-    //exclusive
-    /**
-     * gets and sets pause
-     */
+    
     public boolean HasPause() {
         return hasPause;
     }
     public void setPause(boolean hasPause) {
         this.hasPause = hasPause;
     }
-
-    /**
-     * gets and sets capacity
-     */
-    public int getCapacity() {
-        return capacity;
+    
+    public int getXwritikotita() {
+        return Xwritikotita;
     }
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public void setXwritikotita(int Xwritikotita) {
+        this.Xwritikotita = Xwritikotita;
     }
-
-    /**
-     * gets and sets turns per second
-     */
-    public int getTurnsPerSecond() {
-        return turnsPerSecond;
+    
+    public int getStrofesAnaDeutero() {
+        return StrofesAnaDeutero;
     }
-    public void setTurnsPerSecond(int turnsPerSecond) {
-        this.turnsPerSecond = turnsPerSecond;
+    public void setStrofesAnaDeutero(int StrofesAnaDeutero) {
+        this.StrofesAnaDeutero = StrofesAnaDeutero;
     }
-
-    /**
-     * gets and sets the temperatures
-     */
-    public String[] getTemperatures() {
-        return temperatures;
+    
+    public String[] getFermokrasies() {
+        return Fermokrasies;
     }
-    public void setTemperatures(String[] temperatures) {
-        this.temperatures = temperatures;
+    public void setFermokrasies(String[] Fermokrasies) {
+        this.Fermokrasies = Fermokrasies;
     }
-
-    /**
-     * gets and sets the water supply
-     */
-    public int getWaterSupply() {
-        return waterSupply;
+    
+    public int getKatanalwsiNerou() {
+        return KatanalwsiNerou;
     }
-    public void setWaterSupply(int waterSupply) {
-        this.waterSupply = waterSupply;
+    public void setKatanalwsiNerou(int KatanalwsiNerou) {
+        this.KatanalwsiNerou = KatanalwsiNerou;
     }
-
-    /**
-     * gets and sets if it has lock for children
-     */
-    public boolean HasLockForChildren() {
-        return hasLockForChildren;
-    }
-    public void setLockForChildren(boolean hasLockForChildren) {
-        this.hasLockForChildren = hasLockForChildren;
-    }
+    
 }

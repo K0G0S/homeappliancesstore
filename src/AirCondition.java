@@ -13,7 +13,6 @@ public class AirCondition {
     private boolean FiltroAera;
 
     private static int timesCreated;
-
     public AirCondition()
     {
         periodicMantainance();

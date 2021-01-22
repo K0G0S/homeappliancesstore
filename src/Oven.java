@@ -1,61 +1,44 @@
 public class Oven {
 
-    private int height;
-    private int width;
-    private int depth;
-    private String manufacturer;
-    private String name;
-    private String type;
-    private int powerSupply;
-    private int capacity;
-    private boolean isDigital;
-    private boolean hasCleaningSystem;
-    private boolean isCeramic;
-    private boolean hasGrill;
+    private int Ipsos;
+    private int Markos;
+    private int Bafos;
+    private String Kataskeuastis;
+    private String OnomaModelou;
+    private String Typos;
+    private int Katanalwsi;
+    private int Xwritikotita;
+    private boolean EinaiPsifiakos;
+    private boolean ExeiSxara;
 
     private static int timesCreated;
-    /**
-     * default constructor
-     */
     public Oven()
     {
         timesCreated++;
         periodicMantainance();
     }
-    /**
-     * recommended constructor
-     */
-    public Oven(int height,int width,int depth,String manufacturer,String name,String type,int powerSupply,
-                int capacity,boolean isDigital,boolean hasCleaningSystem,boolean isCeramic,boolean hasGrill)
+
+    public Oven(int Ipsos,int Markos,int Bafos,String Kataskeuastis,String OnomaModelou,String Typos,int Katanalwsi,int Xwritikotita,boolean EinaiPsifiakos,boolean ExeiSxara)
     {
         timesCreated++;
 
-        setHeight(height);
-        setWidth(width);
-        setDepth(depth);
-        setManufacturer(manufacturer);
-        setName(name);
-        setType(type);
-        setPowerSupply(powerSupply);
-
-        setCapacity(capacity);
-        setDigital(isDigital);
-        setCleaningSystem(hasCleaningSystem);
-        setCeramic(isCeramic);
-        setGrill(hasGrill);
-
-
+        setIpsos(Ipsos);
+        setMarkos(Markos);
+        setBafos(Bafos);
+        setKataskeuastis(Kataskeuastis);
+        setOnomaModelou(OnomaModelou);
+        setTypos(Typos);
+        setKatanalwsi(Katanalwsi);
+        setXwritikotita(Xwritikotita);
+        setDigital(EinaiPsifiakos);
+        setGrill(ExeiSxara);
     }
-    /**
-     * gets how many times the object has been created
-     */
+   
     public static int getTimesCreated()
     {
         return timesCreated;
     }
-    /**
-     * showcase for the overloading feature
-     */
+   
     private void periodicMantainance()
     {
 
@@ -64,158 +47,105 @@ public class Oven {
     {
 
     }
-    /**
-     * prints all the features of the oven
-     */
+    
     public void showAll()
     {
         System.out.println("--Oven--");
 
-        System.out.printf("Height: %d\n",this.height);
-        System.out.printf("Width: %d\n",this.width);
-        System.out.printf("Depth: %d\n",this.depth);
-        System.out.printf("Manufacturer: %s\n",this.manufacturer);
-        System.out.printf("Name: %s\n",this.name);
-        System.out.printf("Type: %s\n",this.type);
-        System.out.printf("Power Supply: %d\n",this.powerSupply);
-
-        System.out.printf("Capacity: %d\n",this.capacity);
-        System.out.printf("Is Digital: %b\n",this.isDigital);
-        System.out.printf("Has Cleaning System: %b\n",this.hasCleaningSystem);
-        System.out.printf("Is Ceramic: %b\n",this.isCeramic);
-        System.out.printf("Has Grill: %b\n",this.hasGrill);
+        System.out.printf("Ipsos: %d\n",this.Ipsos);
+        System.out.printf("Markos: %d\n",this.Markos);
+        System.out.printf("Bafos: %d\n",this.Bafos);
+        System.out.printf("Kataskeuastis: %s\n",this.Kataskeuastis);
+        System.out.printf("OnomaModelou: %s\n",this.OnomaModelou);
+        System.out.printf("Typos: %s\n",this.Typos);
+        System.out.printf("Power Supply: %d\n",this.Katanalwsi);
+        System.out.printf("Xwritikotita: %d\n",this.Xwritikotita);
+        System.out.printf("Is Digital: %b\n",this.EinaiPsifiakos);
+        System.out.printf("Has Grill: %b\n",this.ExeiSxara);
         System.out.printf("Items Created: %d\n",timesCreated);
     }
-
-    /**
-     * gets and sets height
-     */
-    public int getHeight()
+    
+    public int getIpsos()
     {
-        return this.height;
+        return this.Ipsos;
     }
-    public void setHeight(int height)
+    public void setIpsos(int Ipsos)
     {
-        this.height = height;
+        this.Ipsos = Ipsos;
     }
-
-    /**
-     * gets and sets width
-     */
-    public int getWidth()
+    
+    public int getMarkos()
     {
-        return this.width;
+        return this.Markos;
     }
-    public void setWidth(int width)
+    public void setMarkos(int Markos)
     {
-        this.width = width;
+        this.Markos = Markos;
     }
-
-    /**
-     * gets and sets depth
-     */
-    public int getDepth()
+    
+    public int getBafos()
     {
-        return this.depth;
+        return this.Bafos;
     }
-    public void setDepth(int depth)
+    public void setBafos(int Bafos)
     {
-        this.depth = depth;
+        this.Bafos = Bafos;
     }
 
-    /**
-     * gets and sets manufacturer
-     */
-    public String getManufacturer()
+    public String getKataskeuastis()
     {
-        return this.manufacturer;
+        return this.Kataskeuastis;
     }
-    public void setManufacturer(String manufacturer)
+    public void setKataskeuastis(String Kataskeuastis)
     {
-        this.manufacturer=manufacturer;
+        this.Kataskeuastis=Kataskeuastis;
     }
 
-    /**
-     * gets and sets name
-     */
-    public String getName()
+    public String getOnomaModelou()
     {
-        return this.name;
+        return this.OnomaModelou;
     }
-    public void setName(String name)
+    public void setOnomaModelou(String OnomaModelou)
     {
-        this.name=name;
+        this.OnomaModelou=OnomaModelou;
     }
 
-    /**
-     * gets and sets type
-     */
-    public String getType()
+    public String getTypos()
     {
-        return this.type;
+        return this.Typos;
     }
-    public void setType(String type)
+    public void setTypos(String Typos)
     {
-        this.type=type;
+        this.Typos=Typos;
     }
 
-    /**
-     * gets and sets power supply
-     */
-    public int getPowerSupply()
+    public int getKatanalwsi()
     {
-        return this.powerSupply;
+        return this.Katanalwsi;
     }
-    public void setPowerSupply(int powerSupply)
+    public void setKatanalwsi(int Katanalwsi)
     {
-        this.powerSupply = powerSupply;
+        this.Katanalwsi = Katanalwsi;
     }
 
+    public int getXwritikotita() {
+        return Xwritikotita;
+    }
+    public void setXwritikotita(int Xwritikotita) {
+        this.Xwritikotita = Xwritikotita;
+    }
 
-    //exclusive
-    /**
-     * gets and sets capacity
-     */
-    public int getCapacity() {
-        return capacity;
-    }
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-    /**
-     * gets and sets if its digital
-     */
-    public boolean isDigital() {
-        return isDigital;
+    public boolean EinaiPsifiakos() {
+        return EinaiPsifiakos;
     }
     public void setDigital(boolean digital) {
-        isDigital = digital;
+        EinaiPsifiakos = digital;
     }
-    /**
-     * gets and sets the cleaning system
-     */
-    public boolean HasCleaningSystem() {
-        return hasCleaningSystem;
+
+    public boolean ExeiSxara() {
+        return ExeiSxara;
     }
-    public void setCleaningSystem(boolean hasCleaningSystem) {
-        this.hasCleaningSystem = hasCleaningSystem;
-    }
-    /**
-     * gets and sets the ceramic
-     */
-    public boolean isCeramic() {
-        return isCeramic;
-    }
-    public void setCeramic(boolean ceramic) {
-        isCeramic = ceramic;
-    }
-    /**
-     * gets and sets grill
-     */
-    public boolean hasGrill() {
-        return hasGrill;
-    }
-    public void setGrill(boolean hasGrill) {
-        this.hasGrill = hasGrill;
+    public void setGrill(boolean ExeiSxara) {
+        this.ExeiSxara = ExeiSxara;
     }
 }

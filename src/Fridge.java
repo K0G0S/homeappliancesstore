@@ -1,63 +1,46 @@
 public class Fridge {
 
-    private int height;
-    private int width;
-    private int depth;
-    private String manufacturer;
-    private String name;
-    private String type;
-    private int powerSupply;
-    private int noiseRate;
-    private int capacity;
-    private int shelves;
-    private String color;
-    private boolean hasNoFrost;
-    private boolean hasIceExit;
+    private int Ipsos;
+    private int Platos;
+    private int Bafos;
+    private String Kataskeuastis;
+    private String OnomaModelou;
+    private String Typos;
+    private int Katanalwsi;
+    private int Xwritikotita;
+    private int Rafia;
+    private String Xrwma;
+    private boolean DenExeiKatapsiksi;
 
     private static int timesCreated;
-
-    /**
-     * default constructor
-     */
     public Fridge()
     {
         periodicMantainance();
         timesCreated++;
     }
-    /**
-     * recommended constructor
-     */
-    public Fridge(int height,int width,int depth,String manufacturer,String name,String type,int powerSupply,
-                  int noiseRate,int capacity,int shelves,String color,boolean hasNoFrost,boolean hasIceExit)
+
+    public Fridge(int Ipsos,int Platos,int Bafos,String Kataskeuastis,String OnomaModelou,String Typos,int Katanalwsi,int Xwritikotita,int Rafia,String Xrwma,boolean DenExeiKatapsiksi)
     {
         timesCreated++;
 
-        setHeight(height);
-        setWidth(width);
-        setDepth(depth);
-        setManufacturer(manufacturer);
-        setName(name);
-        setType(type);
-        setPowerSupply(powerSupply);
-
-        setNoiseRate(noiseRate);
-        setCapacity(capacity);
-        setShelves(shelves);
-        setColor(color);
-        setNoFrost(hasNoFrost);
-        setIceExit(hasIceExit);
-
+        setIpsos(Ipsos);
+        setPlatos(Platos);
+        setBafos(Bafos);
+        setKataskeuastis(Kataskeuastis);
+        setOnomaModelou(OnomaModelou);
+        setTypos(Typos);
+        setKatanalwsi(Katanalwsi);
+        setXwritikotita(Xwritikotita);
+        setRafia(Rafia);
+        setXrwma(Xrwma);
+        setNoFrost(DenExeiKatapsiksi);
     }
-    /**
-     * gets how many times the object has been created
-     */
+
     public static int getTimesCreated()
     {
         return timesCreated;
     }
-    /**
-     * just showcasing the overloading feature
-     */
+
     private void periodicMantainance()
     {
 
@@ -66,156 +49,100 @@ public class Fridge {
     {
 
     }
-    /**
-     * prints every field of the class
-     */
+
     public void showAll()
     {
         System.out.println("--Fridge--");
 
-        System.out.printf("Height: %d\n",this.height);
-        System.out.printf("Width: %d\n",this.width);
-        System.out.printf("Depth: %d\n",this.depth);
-        System.out.printf("Manufacturer: %s\n",this.manufacturer);
-        System.out.printf("Name: %s\n",this.name);
-        System.out.printf("Type: %s\n",this.type);
-        System.out.printf("Power Supply: %d\n",this.powerSupply);
-
-        System.out.printf("Noise Rate: %d\n",this.noiseRate);
-        System.out.printf("Capacity: %d\n",this.capacity);
-        System.out.printf("Shelves: %d\n",this.shelves);
-        System.out.printf("Color: %s\n",this.color);
-        System.out.printf("Has No Frost: %b\n",this.hasNoFrost);
-        System.out.printf("Has Ice Exit: %b\n",this.hasIceExit);
+        System.out.printf("Ipsos: %d\n",this.Ipsos);
+        System.out.printf("Platos: %d\n",this.Platos);
+        System.out.printf("Bafos: %d\n",this.Bafos);
+        System.out.printf("Kataskeuastis: %s\n",this.Kataskeuastis);
+        System.out.printf("OnomaModelou: %s\n",this.OnomaModelou);
+        System.out.printf("Typos: %s\n",this.Typos);
+        System.out.printf("Power Supply: %d\n",this.Katanalwsi);
+        System.out.printf("Xwritikotita: %d\n",this.Xwritikotita);
+        System.out.printf("Rafia: %d\n",this.Rafia);
+        System.out.printf("Xrwma: %s\n",this.Xrwma);
+        System.out.printf("Has No Frost: %b\n",this.DenExeiKatapsiksi);
         System.out.printf("Times Created: %d\n",timesCreated);
 
     }
 
-
-    /**
-     * gets and sets height
-     */
-    public int getHeight() {
-        return this.height;
+    public int getIpsos() {
+        return this.Ipsos;
     }
-    public void setHeight(int height) {
-        this.height = height;
+    public void setIpsos(int Ipsos) {
+        this.Ipsos = Ipsos;
     }
 
-    /**
-     * gets and sets width
-     */
-    public int getWidth() {
-        return this.width;
+    public int getPlatos() {
+        return this.Platos;
     }
-    public void setWidth(int width) {
-        this.width = width;
+    public void setPlatos(int Platos) {
+        this.Platos = Platos;
     }
 
-    /**
-     * gets and sets depth
-     */
-    public int getDepth() {
-        return this.depth;
+    public int getBafos() {
+        return this.Bafos;
     }
-    public void setDepth(int depth) {
-        this.depth = depth;
+    public void setBafos(int Bafos) {
+        this.Bafos = Bafos;
     }
 
-    /**
-     * gets and sets manufacturer
-     */
-    public String getManufacturer() {
-        return this.manufacturer;
+    public String getKataskeuastis() {
+        return this.Kataskeuastis;
     }
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+    public void setKataskeuastis(String Kataskeuastis) {
+        this.Kataskeuastis = Kataskeuastis;
     }
 
-    /**
-     * gets and sets name
-     */
-    public String getName() {
-        return this.name;
+    public String getOnomaModelou() {
+        return this.OnomaModelou;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setOnomaModelou(String OnomaModelou) {
+        this.OnomaModelou = OnomaModelou;
     }
 
-    /**
-     * gets and sets type
-     */
-    public String getType() {
-        return this.type;
+    public String getTypos() {
+        return this.Typos;
     }
-    public void setType(String type) {
-        this.type = type;
+    public void setTypos(String Typos) {
+        this.Typos = Typos;
     }
 
-    /**
-     * gets and sets power supply
-     */
-    public int getPowerSupply() {
-        return this.powerSupply;
+    public int getKatanalwsi() {
+        return this.Katanalwsi;
     }
-    public void setPowerSupply(int powerSupply) {
-        this.powerSupply = powerSupply;
+    public void setKatanalwsi(int Katanalwsi) {
+        this.Katanalwsi = Katanalwsi;
     }
 
+    public int getXwritikotita() {
+        return Xwritikotita;
+    }
+    public void setXwritikotita(int Xwritikotita) {
+        this.Xwritikotita = Xwritikotita;
+    }
 
-    //exclusive
-    /**
-     * gets and sets noise rate
-     */
-    public int getNoiseRate() {
-        return noiseRate;
+    public int getRafia() {
+        return Rafia;
     }
-    public void setNoiseRate(int noiseRate) {
-        this.noiseRate = noiseRate;
+    public void setRafia(int Rafia) {
+        this.Rafia = Rafia;
     }
-    /**
-     * gets and sets capacity
-     */
-    public int getCapacity() {
-        return capacity;
+
+    public String getXrwma() {
+        return Xrwma;
     }
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public void setXrwma(String Xrwma) {
+        this.Xrwma = Xrwma;
     }
-    /**
-     * gets and sets shelves
-     */
-    public int getShelves() {
-        return shelves;
+
+    public boolean DenExeiKatapsiksi() {
+        return DenExeiKatapsiksi;
     }
-    public void setShelves(int shelves) {
-        this.shelves = shelves;
-    }
-    /**
-     * gets and sets color
-     */
-    public String getColor() {
-        return color;
-    }
-    public void setColor(String color) {
-        this.color = color;
-    }
-    /**
-     * gets and sets no frost
-     */
-    public boolean HasNoFrost() {
-        return hasNoFrost;
-    }
-    public void setNoFrost(boolean hasNoFrost) {
-        this.hasNoFrost = hasNoFrost;
-    }
-    /**
-     * gets and sets ice exit
-     */
-    public boolean HasIceExit() {
-        return hasIceExit;
-    }
-    public void setIceExit(boolean hasIceExit) {
-        this.hasIceExit = hasIceExit;
+    public void setNoFrost(boolean DenExeiKatapsiksi) {
+        this.DenExeiKatapsiksi = DenExeiKatapsiksi;
     }
 }
