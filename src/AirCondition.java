@@ -1,18 +1,16 @@
 public class AirCondition {
 
-    private int height;
-    private int width;
-    private int depth;
-    private String manufacturer;
-    private String name;
-    private String type;
-    private int powerSupply;
-    private int coldPower;
-    private int hotPower;
-    private boolean hasWifi;
-    private boolean hasAirFilter;
-    private String coldRank;
-    private boolean isInverter;
+    private int Ipsos;
+    private int Platos;
+    private int Ba8os;
+    private String Kataskeuastis;
+    private String OnomaModelou;
+    private String Typos;
+    private int Katanalwsi;
+    private int Kiou;
+    private int Zesti;
+    private boolean Wifi;
+    private boolean FiltroAera;
 
     private static int timesCreated;
 
@@ -21,249 +19,150 @@ public class AirCondition {
         periodicMantainance();
         timesCreated++;
     }
-    /**
-     * constructor that recommended to be used for object initialization,must be public
-     * @param height sets the height
-     * @param width sets the width
-     * @param depth sets the depth
-     * @param manufacturer sets the manufacturer
-     * @param name sets the name
-     * @param type sets the type
-     * @param powerSupply sets the power supply
-     * @param hotPower sets the hot power
-     * @param hasWifi sets to see if it has wifi
-     * @param hasAirFilter sees if it has air filter
-     * @param coldRank sees the rank of the cold
-     * @param isInverter sees if its inverted
-     * @param coldPower sets the cold power
-     */
-    public AirCondition(int height,int width,int depth,String manufacturer,String name,String type,int powerSupply,
-                        int coldPower,int hotPower,boolean hasWifi,boolean hasAirFilter,String coldRank,boolean isInverter)
+
+    public AirCondition(int Ipsos,int Platos,int Ba8os,String Kataskeuastis,String OnomaModelou,String Typos,int Katanalwsi, boolean Wifi,boolean FiltroAera,String coldRank,boolean isInverter)
     {
         timesCreated++;
 
-        setHeight(height);
-        setWidth(width);
-        setDepth(depth);
-        setManufacturer(manufacturer);
-        setName(name);
-        setType(type);
-        setPowerSupply(powerSupply);
-
-        setColdPower(coldPower);
-        setHotPower(hotPower);
-        setWifi(hasWifi);
-        setAirFilter(hasAirFilter);
-        setColdRank(coldRank);
-        setInverter(isInverter);
+        setIpsos(Ipsos);
+        setPlatos(Platos);
+        setBa8os(Ba8os);
+        setKataskeuastis(Kataskeuastis);
+        setOnomaModelou(OnomaModelou);
+        setTypos(Typos);
+        setKatanalwsi(Katanalwsi);
+        setKiou(Kiou);
+        setZesti(Zesti);
+        setWifi(Wifi);
+        setAirFilter(FiltroAera);
     }
-    /**
-     * prints in console every field of the class,
-     * must be public
-     */
+
     public void showAll()
     {
         System.out.println("--Air Conditioner--");
 
-        System.out.printf("Height: %d\n",this.height);
-        System.out.printf("Width: %d\n",this.width);
-        System.out.printf("Depth: %d\n",this.depth);
-        System.out.printf("Manufacturer: %s\n",this.manufacturer);
-        System.out.printf("Name: %s\n",this.name);
-        System.out.printf("Type: %s\n",this.type);
-        System.out.printf("Power Supply: %d\n",this.powerSupply);
-
-        System.out.printf("Cold Power: %d\n",this.coldPower);
-        System.out.printf("Hot Power: %d\n",this.hotPower);
-        System.out.printf("Has Wifi: %b\n",this.hasWifi);
-        System.out.printf("Has Air Filtering: %b\n",this.hasAirFilter);
-        System.out.printf("Cold Ranking: %s\n",this.coldRank);
-        System.out.printf("Is Inverter: %b\n",this.isInverter);
+        System.out.printf("Ipsos: %d\n",this.Ipsos);
+        System.out.printf("Platos: %d\n",this.Platos);
+        System.out.printf("Ba8os: %d\n",this.Ba8os);
+        System.out.printf("Kataskeuastis: %s\n",this.Kataskeuastis);
+        System.out.printf("OnomaModelou: %s\n",this.OnomaModelou);
+        System.out.printf("Typos: %s\n",this.Typos);
+        System.out.printf("Power Supply: %d\n",this.Katanalwsi);
+        System.out.printf("Cold Power: %d\n",this.Kiou);
+        System.out.printf("Hot Power: %d\n",this.Zesti);
+        System.out.printf("Has Wifi: %b\n",this.Wifi);
+        System.out.printf("Has Air Filtering: %b\n",this.FiltroAera);
         System.out.printf("Times Created: %d\n",timesCreated);
 
     }
-    /**
-     * gets how many times an AirCondition was made
-     * must be public
-     */
 
     public static int getTimesCreated()
     {
         return timesCreated;
     }
 
-
     private void periodicMantainance()
     {
 
     }
-    /**
-     * overloads a method
-     */
+
     private void periodicMantainance(int overloaded)
     {
 
     }
 
-    /**
-     * gets and sets height
-     *  must be public, but we can change it later maybe to only initialize in constructor
-     */
-    public int getHeight()
+    public int getIpsos()
     {
-        return this.height;
+        return this.Ipsos;
     }
-    public void setHeight(int height)
+    public void setIpsos(int Ipsos)
     {
-        this.height = height;
+        this.Ipsos = Ipsos;
     }
 
-    /**
-     * gets and sets width
-     *  must be public
-     */
-    public int getWidth()
+    public int getPlatos()
     {
-        return this.width;
+        return this.Platos;
     }
-    public void setWidth(int width)
+    public void setPlatos(int Platos)
     {
-        this.width = width;
+        this.Platos = Platos;
     }
 
-    /**
-     * gets and sets depth
-     *  must be public
-     */
-    public int getDepth()
+    public int getBa8os()
     {
-        return this.depth;
+        return this.Ba8os;
     }
-    public void setDepth(int depth)
+    public void setBa8os(int Ba8os)
     {
-        this.depth = depth;
+        this.Ba8os = Ba8os;
     }
 
-    /**
-     * gets and sets manufacturer
-     *  must be public
-     */
-    public String getManufacturer()
+    public String getKataskeuastis()
     {
-        return this.manufacturer;
+        return this.Kataskeuastis;
     }
-    public void setManufacturer(String manufacturer)
+    public void setKataskeuastis(String Kataskeuastis)
     {
-        this.manufacturer=manufacturer;
+        this.Kataskeuastis=Kataskeuastis;
     }
 
-    /**
-     * gets and sets name
-     *  must be public
-     */
-    public String getName()
+    public String getOnomaModelou()
     {
-        return this.name;
+        return this.OnomaModelou;
     }
-    public void setName(String name)
+    public void setOnomaModelou(String OnomaModelou)
     {
-        this.name=name;
+        this.OnomaModelou=OnomaModelou;
     }
 
-    /**
-     * gets and sets type
-     *  must be public
-     */
-    public String getType()
+    public String getTypos()
     {
-        return this.type;
+        return this.Typos;
     }
-    public void setType(String type)
+    public void setTypos(String Typos)
     {
-        this.type=type;
+        this.Typos=Typos;
     }
 
-    /**
-     * gets and sets power supply
-     *  must be public
-     */
-    public int getPowerSupply()
+    public int getKatanalwsi()
     {
-        return this.powerSupply;
+        return this.Katanalwsi;
     }
-    public void setPowerSupply(int powerSupply)
+    public void setKatanalwsi(int Katanalwsi)
     {
-        this.powerSupply = powerSupply;
+        this.Katanalwsi = Katanalwsi;
     }
 
-
-
-
-    //exclusive
-    /**
-     * gets and sets cold power
-     *  must be public
-     */
-    public int getColdPower() {
-        return coldPower;
+    public int getKiou() {
+        return Kiou;
     }
-    public void setColdPower(int coldPower) {
-        this.coldPower = coldPower;
+    public void setKiou(int Kiou) {
+        this.Kiou = Kiou;
     }
 
-    /**
-     * gets and sets hot power
-     *  must be public
-     */
-    public int getHotPower() {
-        return hotPower;
+    public int getZesti() {
+        return Zesti;
     }
 
-    public void setHotPower(int hotPower) {
-        this.hotPower = hotPower;
-    }
-    /**
-     * gets and sets the wifi
-     *  must be public
-     */
-    public boolean HasWifi() {
-        return hasWifi;
+    public void setZesti(int Zesti) {
+        this.Kiou = Zesti;
     }
 
-    public void setWifi(boolean hasWifi) {
-        this.hasWifi = hasWifi;
-    }
-    /**
-     * gets and sets air filter
-     *  must be public
-     */
-    public boolean HasAirFilter() {
-        return hasAirFilter;
+    public boolean Wifi() {
+        return Wifi;
     }
 
-    public void setAirFilter(boolean hasAirFilter) {
-        this.hasAirFilter = hasAirFilter;
+    public void setWifi(boolean Wifi) {
+        this.Wifi = Wifi;
     }
 
-    /**
-     * gets and sets cold rank
-     *  must be public
-     */
-    public String getColdRank() {
-        return coldRank;
+    public boolean FiltroAera() {
+        return FiltroAera;
     }
 
-    public void setColdRank(String coldRank) {
-        this.coldRank = coldRank;
+    public void setAirFilter(boolean FiltroAera) {
+        this.FiltroAera = FiltroAera;
     }
-    /**
-     * gets and sets inverter
-     *  must be public
-     */
-    public boolean isInverter() {
-        return isInverter;
-    }
-    public void setInverter(boolean inverter) {
-        isInverter = inverter;
-    }
+    
 }
